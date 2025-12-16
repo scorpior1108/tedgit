@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TedGit Web Service - A simple web service displaying Hello Ted!">
+    <meta name="author" content="TedGit">
+    <title>Hello Ted! - TedGit Web Service</title>
+    
+    <!-- Preconnect to improve performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="emoji">👋</span>
+                <h1 class="main-title">Hello Ted!</h1>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-text">
+                    <h2 class="subtitle">欢迎来到 TedGit 网页服务</h2>
+                    <p class="description">
+                        这是一个简单而优雅的网页服务，专为展示 "Hello Ted!" 而设计。
+                        项目采用现代化的技术栈，支持容器化部署和自动化CI/CD流程。
+                    </p>
+                </div>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>🚀 高性能</h3>
+                        <p>基于 Node.js + Express 构建，提供快速响应</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🐳 容器化</h3>
+                        <p>支持 Docker 部署，便于跨平台运行</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔄 自动化</h3>
+                        <p>GitHub Actions CI/CD，自动构建和部署</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="api-info">
+                <h3>API 端点</h3>
+                <div class="api-endpoints">
+                    <div class="endpoint">
+                        <code class="method">GET</code>
+                        <code class="url">/</code>
+                        <span class="description">主页面</span>
+                    </div>
+                    <div class="endpoint">
+                        <code class="method">GET</code>
+                        <code class="url">/health</code>
+                        <span class="description">健康检查</span>
+                    </div>
+                    <div class="endpoint">
+                        <code class="method">GET</code>
+                        <code class="url">/api/info</code>
+                        <span class="description">服务信息</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 TedGit Web Service. 用 ❤️ 制作。</p>
+            <p>运行在端口 <span class="port">8222</span></p>
+        </footer>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
